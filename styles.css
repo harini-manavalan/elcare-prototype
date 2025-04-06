@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f8f9fc;
+    color: #1e2a4b;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  p {
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  .homepage-container {
+    padding: 30px;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+    margin-top: 40px;
+  }
+  
+  .card {
+    background-color: #ffffff;
+    padding: 25px 20px;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    background-color: #eef2f7;
+  }
+  
+  /* AI Monitoring Special Card */
+  .card.monitoring {
+    background-color: #fff8f0;
+    border: 2px dashed #ff914d;
+  }
+  
+  .card.monitoring:hover {
+    background-color: #ffe6d3;
+  }
+  
+  /* Chatbot styles */
+  .chatbot-icon {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #1e2a4b;
+    color: white;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    z-index: 999;
+  }
+  
+  .chatbox {
+    display: none;
+    position: fixed;
+    bottom: 90px;
+    right: 30px;
+    width: 300px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    overflow: hidden;
+    flex-direction: column;
+  }
+  
+  .chatbox .chat-header {
+    background-color: #1e2a4b;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+  
+  .chatbox .chat-messages {
+    padding: 10px;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  .chatbox input {
+    border: none;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
